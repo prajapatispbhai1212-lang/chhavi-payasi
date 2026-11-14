@@ -1,0 +1,378 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Shahdol - मेरा शहडोल</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #222;
+}
+
+header {
+    background: linear-gradient(120deg, #064e3b, #16a34a);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 38px;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+nav {
+    background: #064e3b;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+.hero {
+    min-height: 350px;
+    background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+    ), url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e')
+    center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.hero h2 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+h2.section-title {
+    text-align: center;
+    color: #065f46;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.info {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    line-height: 1.8;
+    box-shadow: 0 3px 12px #00000012;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 22px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #00000015;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+.card .emoji {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #047857;
+    margin: 12px 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+.map {
+    width: 100%;
+    height: 400px;
+    border: none;
+    border-radius: 12px;
+}
+
+footer {
+    background: #064e3b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+button {
+    background: #16a34a;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #064e3b;
+}
+
+@media(max-width:600px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    .hero h2 {
+        font-size: 27px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🌳 MY SHAHDOL 🌳</h1>
+    <p>मेरा शहडोल - मध्य प्रदेश का खूबसूरत जिला</p>
+</header>
+
+<nav>
+    <a href="#home">होम</a>
+    <a href="#about">परिचय</a>
+    <a href="#history">इतिहास</a>
+    <a href="#tourism">पर्यटन</a>
+    <a href="#culture">संस्कृति</a>
+    <a href="#map">मैप</a>
+</nav>
+
+<section class="hero" id="home">
+    <h2>आपका स्वागत है शहडोल में</h2>
+    <p>प्राकृतिक सुंदरता, इतिहास और संस्कृति की पहचान</p>
+</section>
+
+<div class="container" id="about">
+    <h2 class="section-title">शहडोल जिले का परिचय</h2>
+
+    <div class="info">
+        <p>
+        शहडोल मध्य प्रदेश राज्य के उत्तर-पूर्वी भाग में स्थित
+        एक सुंदर जिला है। शहडोल अपने जंगलों, प्राकृतिक
+        संसाधनों, ऐतिहासिक स्थलों और आदिवासी संस्कृति के
+        लिए जाना जाता है।
+        </p>
+
+        <p>
+        शहडोल जिला मुख्यालय भी है और यह दक्षिण-पूर्वी रेलवे
+        के बिलासपुर-कटनी रेलमार्ग पर स्थित है।
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="section-title">शहडोल एक नजर में</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="emoji">📍</div>
+            <h3>राज्य</h3>
+            <p>मध्य प्रदेश</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">📐</div>
+            <h3>क्षेत्रफल</h3>
+            <p>5,610 वर्ग किलोमीटर</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">👨‍👩‍👧‍👦</div>
+            <h3>जनसंख्या</h3>
+            <p>10,66,063 (2011 जनगणना)</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🏘️</div>
+            <h3>गांव</h3>
+            <p>886 (जिला पोर्टल के अनुसार)</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" id="history">
+    <h2 class="section-title">शहडोल का इतिहास</h2>
+
+    <div class="info">
+        <p>
+        शहडोल का नाम स्थानीय मान्यता के अनुसार सोहागपुर
+        गांव के शाहडोलवा अहीर के नाम से जुड़ा हुआ है।
+        इस क्षेत्र का इतिहास बघेलखंड के इतिहास से जुड़ा है।
+        यहां अनेक पुराने ऐतिहासिक और धार्मिक स्थल मौजूद हैं।
+        </p>
+    </div>
+</div>
+
+<div class="container" id="tourism">
+    <h2 class="section-title">शहडोल के प्रमुख पर्यटन स्थल</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="emoji">🛕</div>
+            <h3>विराटेश्वर मंदिर</h3>
+            <p>सोहागपुर का प्रसिद्ध ऐतिहासिक शिव मंदिर।</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🌊</div>
+            <h3>बाणगंगा</h3>
+            <p>शहडोल का प्रसिद्ध धार्मिक और पर्यटन स्थल।</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🏝️</div>
+            <h3>सारसी आइलैंड</h3>
+            <p>प्राकृतिक सुंदरता और घूमने के लिए आकर्षक स्थान।</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🙏</div>
+            <h3>बूढ़ी माता मंदिर</h3>
+            <p>क्षेत्र का प्रसिद्ध धार्मिक स्थल।</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" id="culture">
+    <h2 class="section-title">शहडोल की संस्कृति</h2>
+
+    <div class="info">
+        <p>
+        शहडोल की संस्कृति में आदिवासी परंपराओं का विशेष
+        महत्व है। यहां गोंड और बैगा सहित विभिन्न समुदायों
+        की परंपराएं देखने को मिलती हैं।
+        </p>
+
+        <p>
+        यहां लोकगीत, लोकनृत्य, पारंपरिक त्योहार और
+        स्थानीय खानपान लोगों की सांस्कृतिक पहचान हैं।
+        </p>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="section-title">शिक्षा और विकास</h2>
+
+    <div class="cards">
+        <div class="card">
+            <div class="emoji">📚</div>
+            <h3>शिक्षा</h3>
+            <p>शहडोल में स्कूल, कॉलेज और उच्च शिक्षा संस्थान हैं।</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🏥</div>
+            <h3>स्वास्थ्य</h3>
+            <p>यहां अस्पताल और चिकित्सा सुविधाएं उपलब्ध हैं।</p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">⛏️</div>
+            <h3>खनिज संपदा</h3>
+            <p>यह क्षेत्र कोयला और अन्य प्राकृतिक संसाधनों के लिए जाना जाता है।</p>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="map">
+    <h2 class="section-title">शहडोल का नक्शा</h2>
+
+    <iframe
+        class="map"
+        src="https://www.google.com/maps?q=Shahdol,Madhya+Pradesh&output=embed"
+        loading="lazy">
+    </iframe>
+
+    <center>
+        <a href="https://www.google.com/maps/search/?api=1&query=Shahdol+Madhya+Pradesh"
+           target="_blank">
+            <button>पूरा मैप देखें</button>
+        </a>
+    </center>
+</div>
+
+<div class="container">
+    <h2 class="section-title">हमारा शहडोल</h2>
+
+    <div class="info">
+        <p>
+        शहडोल हमारी पहचान और हमारा गौरव है।
+        हमें अपने जिले की प्राकृतिक संपदा, संस्कृति,
+        ऐतिहासिक धरोहर और पर्यावरण की रक्षा करनी चाहिए।
+        </p>
+    </div>
+</div>
+
+<footer>
+    <h3>🌳 MY SHAHDOL 🌳</h3>
+    <p>मेरा जिला - मेरा गौरव</p>
+    <p>Created by: Your Name</p>
+    <p>© 2026 My Shahdol Project</p>
+</footer>
+
+</body>
+</html>
